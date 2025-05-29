@@ -1,0 +1,25 @@
+{
+    "name": "mr-vaco/helpers",
+    "description": "",
+    "keywords": [],
+    "type": "library",
+    "homepage": "https://github.com/MrVACO/helpers",
+    "authors": [
+        {
+            "name": "Artem Mr.VACO Feoktistov"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^12"
+    },
+    "autoload": {
+        "psr-4": {
+            "MrVaco\\Helpers\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
