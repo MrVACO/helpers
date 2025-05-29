@@ -19,7 +19,7 @@ class Migration
 
         $filesystem = app()->make(Filesystem::class);
 
-        return Collection::make([database_path('migrations')])
+        return Collection::make([database_path('migrations/')])
             ->flatMap(fn ($path) => $filesystem->glob($path . '*_' . $migrationFileName))
             ->push(database_path("migrations/{$timestamp}_{$migrationFileName}"))
             ->first();
