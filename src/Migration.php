@@ -21,7 +21,7 @@ class Migration
 
         return Collection::make([database_path('migrations')])
             ->flatMap(fn ($path) => $filesystem->glob($path . '*_' . $migrationFileName))
-            ->push(database_path("migrations/{$timestamp}_$migrationFileName}"))
+            ->push(database_path("migrations/{$timestamp}_{$migrationFileName}"))
             ->first();
     }
 }
